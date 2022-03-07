@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homeprice</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body background="static/images/bg.jpg">
+    <!-- Input Form -->
+    <div class="input form">
+        <form action="{{url_for('predict')}}" method="post" id="input head">
+            <h1 style="color:black;">Homeprices Prediction</h1>
+            <h3 id="input">Enter  your area</h3>
+            <input type="text" name="area" placeholder="area">
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
