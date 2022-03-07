@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>STROKE</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body background="static/image/stroke.jpg">
+
+
+
+<center>
+<div class="input form">
+<form action="{{url_for('predict')}}" method="post" id="input head">
+<h1 style="color:black;">Stroke Disease Prediction</h1>
+
+<label for="gen">Gender:</label>
+<select name="gen" id="gen">
+<option value=0>Female</option>
+<option value=1>Male</option>
+</select>
+<br><br>
+
+<label for="age">Age:</label>
+<input type="text" name="age" placeholder="Age">
+<br><br>
+
+<label for="ht">Hyper Tension:</label>
+<select name="ht" id="ht">
+<option value=0>No</option>
+<option value=1>Yes</option>
+</select>
+<br><br>
+
+<label for="heart">Heart Disease:</label>
+<select name="heart" id="heart">
+<option value=0>No</option>
+<option value=1>Yes</option>
+</select>
+<br><br>
+
+<label for="ever">Ever Married:</label>
+<select name="ever" id="ever">
+<option value=0>No</option>
+<option value=1>Yes</option>
+</select>
+<br><br>
+
+<label for="work">Work Type:</label>
+<select name="work" id="work">
+<option value=0>Govt-Job</option>
+<option value=1>Never Worked</option>
+<option value=2>Private</option>
+<option value=3>Self Employed</option>
+<option value=4>Children</option>
+</select>
+<br><br>
+
+<label for="residence">Residence Type:</label>
+<select name="residence" id="residence">
+<option value=0>Rural</option>
+<option value=1>Urban</option>
+</select>
+<br><br>
+
+<label for="avg">Avarage Glucose Level:</label>
+<input type="number" name="avg" placeholder="Avarage glucose level">
+<br><br>
+
+<label for="bmi">BMI:</label>
+<input type="number" name="bmi" placeholder="BMI">
+<br><br>
+
+<label for="smoke">Smoking Status:</label>
+<select name="smoke" id="smoke">
+<option value=0>Unknown</option>
+<option value=1>Formerly Smoked</option>
+<option value=2>Never Smoked</option>
+<option value=3>Smokes</option>
+</select>
+<br>
+<br>
+
+<button id="submit" type="submit">Submit</button>
+</center>
+</form>
+</div>
+</body>
+</html>
