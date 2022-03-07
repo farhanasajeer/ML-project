@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body background="static/images/background1.jpg">
+    <!-- Input Form -->
+    <div class="input form">
+        <form action="{{url_for('predict')}}" method="post" id="input head">
+            <h1 id="heading">Income Prediction Form</h1>
+            <h3 id="input">Enter Your Experience in Years</h3>
+            <input type="text" name="experience" placeholder="Experience in Years">
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
