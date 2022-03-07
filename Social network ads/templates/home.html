@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Social Network</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body background="static/images/image.jpg">
+
+<div class="input form">
+<form action="{{url_for('predict')}}" method="post" id="input head">
+<h1 style="color:black;">Social Network </h1>
+
+<label for="gen">Gender:</label>
+<select name="gen" id="gen">
+<option value=0>Female</option>
+<option value=1>Male</option>
+</select>
+<br>
+
+<h3 id="input">Age</h3>
+<input type="text" name="Age" placeholder="Age">
+<br>
+
+<h3 id="input">Estimated Salary</h3>
+<input type="text" name="estimatedsalary" placeholder="Estimated Salary">
+<br>
+
+<br>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
