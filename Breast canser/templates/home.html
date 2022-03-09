@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Breast Canser</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body background="static/image/breast.jpg">
+<center>
+<div class="input form">
+<form action="{{url_for('predict')}}" method="post" id="input head">
+<h1 style="color:black;">Breast Canser Prediction</h1>
+
+<label for="age">Age:</label>
+<select name="age" id="age">
+<option value=1>30-39</option>
+<option value=2>40-49</option>
+<option value=3>50-59</option>
+<option value=4>60-69</option>
+</select>
+<br><br>
+
+<label for="menopause">Menopause:</label>
+<select name="menopause" id="menopause">
+<option value=0>ge40</option>
+<option value=1>It40</option>
+<option value=2>premeno</option>
+</select>
+<br><br>
+
+<label for="tumor">Tumor Size:</label>
+<select name="tumor" id="tumor">
+<option value=0>0-4</option>
+<option value=1>10-14</option>
+<option value=2>15-19</option>
+<option value=3>20-24</option>
+<option value=4>25-29</option>
+<option value=5>30-34</option>
+<option value=6>35-39</option>
+<option value=7>40-44</option>
+<option value=8>45-49</option>
+<option value=9>50-54</option>
+</select>
+<br><br>
+
+<label for="inv">Inv Nodes:</label>
+<select name="inv" id="inv">
+<option value=0>0-2</option>
+<option value=1>3-5</option>
+<option value=2>6-8</option>
+<option value=3>9-8</option>
+<option value=4>12-14</option>
+<option value=5>15-17</option>
+<option value=6>24-26</option>
+</select>
+<br><br>
+
+<label for="node">Node Caps:</label>
+<select name="node" id="node">
+<option value=0>No</option>
+<option value=1>Yes</option>
+</select>
+<br><br>
+
+<label for="deg">Deg Malig:</label>
+<select name="deg" id="deg">
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+</select>
+<br><br>
+
+<label for="breast">Breast:</label>
+<select name="breast" id="breast">
+<option value=0>Left</option>
+<option value=1>Right</option>
+</select>
+<br><br>
+
+<label for="breastquad">Breast Quad:</label>
+<select name="breastquad" id="breastquad">
+<option value=0>Central</option>
+<option value=1>Left low</option>
+<option value=2>Left up</option>
+<option value=3>Right low</option>
+<option value=4>Right up</option>
+</select>
+<br><br>
+
+<label for="irradiat">Irradiat:</label>
+<select name="irradiat" id="irradiat">
+<option value=0>No</option>
+<option value=1>Yes</option>
+</select>
+<br><br>
+
+<button id="submit" type="submit">Submit</button>
+</center>
+</form>
+</div>
+</body>
+</html>
