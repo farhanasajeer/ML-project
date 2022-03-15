@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>WEATHER</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body background="static/images/wt.jpg">
+<div class="input form">
+<form action="{{url_for('predict')}}" method="post" id="input head">
+<h1 style="color:black;">Wheather Prediction </h1>
+
+
+
+<h3 id="input">Precipitation</h3>
+<input type="text" name="precipitation" placeholder="">
+<br>
+
+<h3 id="input">Temp max</h3>
+<input type="text" name="temp" placeholder="">
+<br>
+
+<h3 id="input">Temp min</h3>
+<input type="text" name="tempmin" placeholder="">
+<br>
+
+<h3 id="input">Wind</h3>
+<input type="text" name="wind" placeholder="">
+<br>
+
+<br>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
