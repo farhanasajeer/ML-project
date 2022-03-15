@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Iris</title>
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body background="static/images/iris.jpg">
+<div class="input form">
+<form action="{{url_for('predict')}}" method="post" id="input head">
+<h1 style="color:black;">IRIS</h1>
+<h3 id="input">Sepal Length</h3>
+<input type="text" name="sepallength" placeholder="sepallength">
+<br>
+<h3 id="input">Sepal Width</h3>
+<input type="text" name="sepalwidth" placeholder="sepalwidth">
+<br>
+<h3 id="input">Petal Length</h3>
+<input type="text" name="petallength" placeholder="petallength">
+<br>
+<h3 id="input">Petal Width</h3>
+<input type="text" name="petalwidth" placeholder="petalwidth">
+<br>
+<br>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
